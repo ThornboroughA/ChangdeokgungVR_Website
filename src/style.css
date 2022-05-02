@@ -2,6 +2,10 @@
 {
     margin: 0;
     padding: 0;
+
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    font-size: 7vmin;
 }
 
 
@@ -21,28 +25,23 @@ html {
 
 section
 {
-    /*flex-direction: column;*/
-
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
+    position: relative; /*appears in front or behind text*/
     height: 100vh;
-    position: relative;
-    font-family: 'Cabin', sans-serif;
-    color: #ffeded;
-    
-    font-size: 7vmin;
-    padding-left: 10%;
-    padding-right: 10%;
+
+    max-width: 80%; 
+
+    background-color: aqua;
 }
-section p {
-    
-    
-    font-size: 3vmin;
-    padding-left: 2%;
+subsection h1 {
+   
 }
 
 section:nth-child(odd)
 {
-    justify-content: flex-end;
+    background-color: aliceblue;
+    /*justify-content: flex-end;*/
     /*padding-left:40%;*/
 }

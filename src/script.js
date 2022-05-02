@@ -1,25 +1,16 @@
 import './style.css'
 import * as THREE from 'three'
-import * as dat from 'lil-gui'
 import gsap from 'gsap'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 /**
  * Debug
  */
-const gui = new dat.GUI()
 
 const parameters = {
     materialColor: '#71566f'
 }
 
-gui
-    .addColor(parameters, 'materialColor')
-    .onChange(() =>
-    {
-        material.color.set(parameters.materialColor)
-        //particlesMaterial.color.set(parameters.materialColor)
-    })
 
 /**
  * Base
