@@ -23,6 +23,21 @@ module.exports = {
             template: path.resolve(__dirname, '../src/index.html'),
             minify: true
         }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            template: path.resolve(__dirname, '../src/about.html'),
+            minify: true
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'history.html',
+            template: path.resolve(__dirname, '../src/history.html'),
+            minify: true
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'tutorial.html',
+            template: path.resolve(__dirname, '../src/tutorial.html'),
+            minify: true
+        }),
         new MiniCSSExtractPlugin()
     ],
     module:
