@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    font-size: 7vmin;
+}
+
+
+html {
+    background: #1c1a20
+}
+
+a {
+    text-decoration: none;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+section
+{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+    position:relative; /*appears in front or behind text*/
+    height: 100vh;
+
+    max-width: 1000px; 
+
+    background-color: aqua;
+}
+
+infocontainer {
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+    width: 100%;
+    height: 95%;
+    position: relative;
+}
+.infobox {
+    color:rebeccapurple;
+    background-color: tan;
+
+    height: 600px;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+.infobox:hover {
+    background-color: aliceblue;
+    padding-left: 3px;
+    width: 60%;
+    height: 610px;
+}
+
+
+section:nth-child(odd)
+{
+    background-color: aliceblue;
+    /*justify-content: flex-end;*/
+    /*padding-left:40%;*/
+}
+
+/*# sourceMappingURL=main.css.map*/
