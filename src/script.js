@@ -191,11 +191,13 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 let scrollY = window.scrollY
 let currentSection = 0
 
+
 window.addEventListener('scroll', () =>
     {
         scrollY = window.scrollY
 
-        // Animate objects on appearance
+        // Animate objects on appearance 
+        /*
         const newSection = Math.round(scrollY / sizes.height)
         if (newSection != currentSection){
             currentSection = newSection
@@ -219,7 +221,7 @@ window.addEventListener('scroll', () =>
                         z: '+=0'
                     }
                 )}
-        }
+        }*/
 
         //scrollY = window.scrollY / sizes.height * objectsDistance
     })

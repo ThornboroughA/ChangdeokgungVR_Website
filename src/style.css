@@ -37,7 +37,10 @@ section
 
     max-width: 1000px; 
 
-    background-color: aqua;
+    
+}
+section img {
+    max-width:100%;
 }
 
 infocontainer {
@@ -46,14 +49,16 @@ infocontainer {
     justify-content: center;
     align-items: center;
 
-    background-color: blue;
+    
     width: 100%;
     height: 95%;
     position: relative;
 }
 .infobox {
+
+
     color:rebeccapurple;
-    background-color: tan;
+    
 
     height: 600px;
     width: 50%;
@@ -62,15 +67,12 @@ infocontainer {
 }
 .infobox:hover {
     background-color: aliceblue;
-    padding-left: 3px;
-    width: 60%;
-    height: 610px;
+    
 }
 
 
 section:nth-child(odd)
 {
-    background-color: aliceblue;
     /*justify-content: flex-end;*/
     /*padding-left:40%;*/
 }
