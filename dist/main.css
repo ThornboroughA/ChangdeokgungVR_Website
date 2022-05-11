@@ -4,8 +4,45 @@
     padding: 0;
 
     font-family: 'Cabin', sans-serif;
+}
+html, h1, h2 {
     color: #ffeded;
-    font-size: 7vmin;
+}
+h1, h2, h3 {
+    font-family: 'Hogback', 'Cabin', sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 120px;
+}
+h2 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    padding-top:10px;
+}
+h3 {
+    font-size: 35px;
+}
+h4 {
+    font-size: 25px;
+    text-align:center;
+    line-height:150%;
+    padding-bottom: 15px;
+}
+h5 {
+    text-align:center;
+    font-size: 11px;
+    color: #ffeded75;
+    padding-bottom: 15px;
+}
+
+@font-face {
+    /* font from here: https://allousestudio.com/downloads/hogback/ */
+    font-family: "Hogback";
+    src: url(4304696760815df4.otf) format("opentype");
+    src: url(assets/fonts/67f922f5574f2960.ttf) format("tff"),
+     url(assets/fonts/11da84795748c3d3.woff) format("woff"),
+     url(assets/fonts/a3589fda065261bb.woff2) format("woff2");
 }
 
 
@@ -13,9 +50,6 @@ html {
     background: #1c1a20
 }
 
-a {
-    text-decoration: none;
-}
 
 .webgl
 {
@@ -25,54 +59,113 @@ a {
     outline: none;
 }
 
-
-section
+section, halfsection
 {
     display: flex;
     margin: auto;
     flex-direction: column;
-
     position:relative; /*appears in front or behind text*/
-    height: 100vh;
-
+    /*height: 100vh; height of entire page*/
     max-width: 1000px; 
+    
+}
+section {
+    height: 80%;
+}
+halfsection {
+    height: 50%;
+}
 
-    background-color: aqua;
+section img {
+    max-width:100%;
 }
 
 infocontainer {
     margin:auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    background-color: blue;
     width: 100%;
     height: 95%;
     position: relative;
 }
-.infobox {
-    color:rebeccapurple;
-    background-color: tan;
-
-    height: 600px;
-    width: 50%;
-    margin: 10px;
+infocontainer a {
+    text-decoration: none;
+}
+infocontainer img {
+    padding: 15px;
+    margin-top:5%;
+    align-self:center;
+    max-width: 50%;
+}
+subpage {
+    margin: auto;
+    width:80%;
+    position:relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+subpage p, li {
+    max-width:1000px;
+    margin:auto;
+    
     padding: 10px;
+    line-height: 180%;
 }
-.infobox:hover {
-    background-color: aliceblue;
-    padding-left: 3px;
-    width: 60%;
-    height: 610px;
+subpage img {
+    align-self: center;
+    position: relative;
+    max-width: 50%;
+    padding: 15px;
+
 }
 
 
-section:nth-child(odd)
-{
-    background-color: aliceblue;
-    /*justify-content: flex-end;*/
-    /*padding-left:40%;*/
+.subpage {
+    margin:auto;
+    position:relative;
+    width: 80%;
+    max-width: 1200px;
 }
+
+#teamcredits img {
+    max-width: 60%;
+    margin:auto;
+}
+#teamcredits p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+#teamcredits a {
+    color:#ffeded;
+}
+#teamcredits a:hover {
+    color:#e2d4d4;
+}
+
+#title {
+    text-align:center;
+}
+#title a {
+    text-decoration: none;
+    font-family: 'Hogback', 'Cabin', sans-serif;
+    color:#ffeded;
+}
+#title a:hover {
+    color:#e2d4d4;
+}
+
+.infobox {
+    margin: 10px;  
+}
+#gungnyeocard {
+    max-width:100%;
+    filter:saturate(0%);
+    
+}
+#gungnyeocard:hover{
+    filter:saturate(100%)
+}
+
 
 /*# sourceMappingURL=main.css.map*/
