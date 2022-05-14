@@ -71,19 +71,22 @@ section, halfsection
 }
 section {
     height: 80%;
+    
 }
 halfsection {
     height: 50%;
 }
 
-section img {
-    max-width:100%;
+section img, halfsection img {
+    max-width: 100%;
 }
 
 infocontainer {
     margin:auto;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+
     width: 100%;
     height: 95%;
     position: relative;
@@ -96,6 +99,7 @@ infocontainer img {
     margin-top:5%;
     align-self:center;
     max-width: 50%;
+    bottom: 0px;
 }
 subpage {
     margin: auto;
@@ -115,12 +119,10 @@ subpage p, li {
 subpage img {
     align-self: center;
     position: relative;
-    max-width: 50%;
-    padding: 15px;
-
+    
+    padding: 15px;  
+    max-width:100%;
 }
-
-
 .subpage {
     margin:auto;
     position:relative;
@@ -137,10 +139,11 @@ subpage img {
     padding-bottom: 15px;
 }
 #teamcredits a {
-    color:#ffeded;
+    color:#fff6dc;
+    text-decoration: none;
 }
 #teamcredits a:hover {
-    color:#e2d4d4;
+    color:#d1bdbd;
 }
 
 #title {
@@ -166,3 +169,5 @@ subpage img {
 #gungnyeocard:hover{
     filter:saturate(100%)
 }
+
+
