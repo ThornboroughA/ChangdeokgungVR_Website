@@ -10,6 +10,8 @@ html, h1, h2 {
 }
 h1, h2, h3 {
     font-family: 'Hogback', 'Cabin', sans-serif;
+}
+h1, h2 {
     text-align: center;
 }
 h1 {
